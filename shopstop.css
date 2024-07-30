@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color:white;
+    font-style: italic;
+    color: black;
+}
+
+/* ===== HEADER SECTION ===== */
+header {
+    padding: 5px;
+    text-align: center;
+    color: orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+
+/* ===== NAV BAR SECTION ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    text-decoration:double;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a {
+    color: black;
+    padding: 14px 20px;
+    font-size:large;
+    text-decoration:dotted;
+}
+
+nav a:hover{
+    background-color: orange;
+    color: black;
+    cursor:pointer;
+}
+
+nav input {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    background-color: black;
+    font-size:medium;
+    text-decoration:dotted;
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+nav input:hover {
+    background-color: orange;
+    color: black;
+    cursor:pointer;
+}
+
+/* ===== MAIN SECTION ===== */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#left {
+    flex-basis: 33%;
+    background-color: white;
+    padding: 20px;
+}
+
+.img {
+    src="Hair Pin 7.jpeg" alt="Hair Pin7" width="200px" height="200px"/></div></a>
+}
+
+.btn {
+    display: block;
+    margin: 20px 0px;
+    padding: 14px 25px;
+    width: 200px;
+    font-family:Tahoma;
+    font-weight: 700;
+    font-size: medium;
+    color: orange;
+    background-color: black;
+}
+
+.btn :hover {
+    background-color: black;
+    color: orange;
+    cursor: pointer;
+}
+
+.btn > a {
+    text-decoration: none;
+    color: white;
+    }
+
+a {
+        color: black;
+        text-decoration: underline;
+      }
+
+
+#centre {
+    flex-basis: 33%;
+    background-color: white;
+    padding: 20px;
+}
+
+#right {
+    flex-basis: 33%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* ===== FOOTER SECTION =====  */
+
+footer {
+    background-color: black;
+    padding: 10px;
+    font-size: small;
+    text-align: center;
+    background-color: black;
+    color: orange;
+}
+
+
+/* ===== Media Queries ===== */
+@media screen and (max-width: 768px){
+    nav,main {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        font-size: 12px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 10px;    
+    }
+}
